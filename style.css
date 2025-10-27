@@ -1,0 +1,65 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #dfdbeb;
+  color: #113f13;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho fixo e adaptável */
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Menu flexível */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* faz o menu quebrar em várias linhas */
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Conteúdo centralizado e fluido */
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 8px 0;
+  }
+
+  main {
+    width: 95%;
+    padding: 5px;
+  }
+}
